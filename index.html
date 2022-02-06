@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=yes,minimal-ui">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <title>Libro digital interactivo</title>
+
+  <!-- configuración del libro -->
+  <script>
+  window.book_config = {
+    // parámetro que indica si los capítulos, secciones y figura se auto numeran
+    // para que los capítulos se auto numeren deben utilizar la etiqueta <h1>
+    // para que las secciones se auto numeren deben utilizar la etiqueta <h2>
+    auto_numerate_sections_and_figures: true, 
+  }
+  </script>
+
+  <!-- núcleo del libro interactivo -->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script type="text/javascript" src="js/book.js" charset="utf-8"></script>
+  
+  <!-- personalización del usuario -->
+  <link rel="stylesheet" href="extra/fonts.css" type="text/css">
+  <link rel="stylesheet" href="extra/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="book_loader_container"><div id="book_loader"></div></div>
+
+  <div id="book_container">
+    <div id="btn_back_page"></div>
+    <div id="btn_next_page"></div>
+    <button id="go_to_table_of_content" style="display: none;"></button>
+    
+    <button id="btn_config"></button>
+    <div id="config_options">
+      <div id="dark_light_mode"></div>
+    </div>
+
+    <!-- si este elemento no esta presente, el botón de la tabla de contenido lleva a la primera página con un elemento class="toc_link" -->
+<!--     <div id="table_of_content"></div> -->
+
+    <div id="pages_container">
+      <!--  -->
+      <div class="page" style="background-color:transparent;" num="">
+      </div>
+
+      <!--  -->
+      <div class="page invertcolor" style="margin:0; padding:0; background-size:contain; background-image:url(images/general/portada_cuento.png);" num="">
+        <div class="cover_title">La relación conmigo mismo</div>
+        <div class="cover_subtitle">Laura Isabel Arango Ruiz</div>
+      </div>
+
+      <!--  -->
+      <div class="page" num="">
+        <div class="border">
+          <div class="img_container">
+            <img src="images/general/Lectura_A4_ 1.png" style="width: 66%;">  
+          </div>
+          <p>Hasta ahora has ido aprendiendo un poco más sobre quien eres y lo que estás viviendo.</p>
+          <p>No te preocupes si te ha parecido algo complicado, porque conocernos es una tarea que vamos haciendo cada día, requiere paciencia y lo más interesante es que no se agota. </p>
+          <h3>Pero...te has preguntado, ¿cómo es que logro conocerme?</h3>
+          <p>Los seres humanos tenemos la capacidad de formarnos una idea de nosotros mismos y a esta idea comúnmente se le nombra autoconcepto.  
+           Cuando nos describimos y hablamos de cómo somos, estamos dando cuenta de la información que guardamos de nosotros a lo largo de la vida. </p>
+          <p>El autoconcepto, como la vida misma, cambia con los años y se transforma de acuerdo con los sucesos o situaciones que te llevan a pensar diferente.</p>
+        </div>
+      </div>
+
+      <!--  -->
+      <!-- init-page-num="true" es un parámetro que indica que a partir de esta página comienza la numeración -->
+      <!-- inicialmente los números de las páginas se numeran con numerales romanos -->
+      <!-- num="" es un parámetro que indica que esta página no lleva numeración visible -->
+      <!--  -->
+      <div class="page" num="">
+        <div class="border">
+          <p>Cuando estás viviendo una situación de estrés, el autoconcepto te permite identificar
+            y reconocer las capacidades o cualidades con las que cuentas para afrontar.</p>
+          <h3>¿Esto te da pistas sobre algo?</h3>
+          <p>Lo que piensas de ti mismo es importante, en la medida en que te permite afrontar
+            de mejor manera las distintas situaciones que vives a diario, además te prepara para
+            establecer metas conforme reconoces tus capacidades y por qué no, pasarla cada vez
+            mejor contigo.</p>
+          <p>En esa medida, queremos que sepas que aquello que te dices, lo que piensas de ti y
+            como te describes, cobra importancia para el desarrollo de tus meta</p>
+          <h3>Reflexiona: ¿crees que existe un tipo de relación ideal.</h3>
+          <p>Más que un ideal, hay distintos modos de relacionarnos. Sin embargo, hoy te invitamos
+            a volver ideal la relación que tienes contigo.</p>
+          <p>Y es que, como ya sabes, venimos entendiendo la importancia del autoconcepto, que,
+            en resumen, se trata de aquello que pensamos de nosotros. Sucede que a menudo eso
+            que pensamos puede agradarnos o desagradarnos, es por eso que cuando hablamos
+            de lo que sentimos por nosotros, aparece un nuevo concepto: la autoestima.</p>
+          <p>Todos tenemos características que nos gustan más que otras, no solo en nuestro
+            aspecto físico, sino también sobre nuestras ideas, emociones y acciones</p>
+          <h3>¿Puedes pensar en aquello que más te gusta de ti?</h3>
+          <p>Sin duda has hallado muchas fortalezas, habilidades y cualidades</p>
+          <h3>Si tienes dificultades para hallarlas, pregúntale a alguien cercano: ¿cómo soy yo?</h3>
+          <p>También podrías aprovechar para contrastar eso con lo que piensas sobre ti.</p>
+          <h3>¿Es parecido?</h3>
+          <p>Verás que lo que opinamos sobre nosotros mismos también se relaciona con lo que
+            los demás piensan acerca de nosotros. Si no lo es, tal vez podemos evaluar con el otro
+            las razones por las cuales nos ve de esa manera. Siempre es divertido aprender desde
+            otros puntos de vista.</p>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="page" num="">
+        <div class="border">
+          <div class="img_container">
+            <img src="images/general/Lectura_A4_2.png" style="width: 90%;">  
+          </div>
+          <h3>¿Y si ahora pensamos en eso que no te gusta tanto de ti?</h3>
+          <h3>Alto ahí....</h3>
+          <p>Pueden ser muchas o pocas características, pero la buena noticia es que
+            aquello que reconocemos como limitaciones o dificultades puede ayudarnos
+            a crecer, mediante el esfuerzo, el uso de esas otras habilidades con las que
+            cuentas, considerando las críticas, y por qué no, inspirándote en el éxito de
+            los demás, puedes superar las dificultades aprendiendo de ellas. Algunas
+            personas le llaman a esto mentalidad de crecimiento y tú puedes hacer uso
+            de ella.</p>
+          <p>Lo importante es que en esa relación que vas construyendo contigo entiendas
+            que puede resultar fácil pensar que estás haciendo las cosas mal, pero realmente
+            todos tenemos habilidades para algo, solo tenemos que aprender a escucharnos y
+            reconocerlas.</p>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="page" num="">
+        <div class="border">
+          <h3>Tú eres único y única, sin importar el reto, no olvides recordarlo y ser amable
+            contigo.</h3>
+          <p>Ten presente que las personas que se sienten mejor con ellas y piensan mejores cosas
+            sobre ellas, resisten mejor ante las situaciones de estrés y en general, presentan mayor
+            bienestar.<br>
+            Por eso es importante identificar todo lo que sucede en nosotros, tanto en nuestro
+            cuerpo como en nuestra mente, porque esto nos ayuda a manejar mucho mejor
+            cualquier situación que se nos presente en la vida.</p>
+          <div class="img_container">
+            <img src="images/general/Lectura_A4_ 3.png" style="width: 75%;">  
+          </div>
+        </div>
+      </div>
+
+      <div class="page" num="" >
+        <div class="border">
+          <h2 style="text-align: center; margin: 40px 0 65px;">Referencias</h2>
+          <p><span class="tab"></span><strong>Educativa (2019)</strong> Navegar Seguro Guía del docente. Grado Noveno.
+            file:///C:/Users/liar-/Downloads/grado-noveno-guia-docente%20(1).pdf</p>
+          <p><span class="tab"></span><strong>Durango, Y. y Sánchez, A. (2019)</strong> Autoesquemas y estrategias de afrontamiento
+            de un grupo de adultos mayores del Municipio de Chigorodó y su relación con
+            calidad de vida y estado de ánimo depresivo. https://bibliotecadigital.udea.
+            edu.co/bitstream/10495/15060/1/DurangoYamith_2019_AutoesquemasEstrategia-
+            sAfrontamiento.pdf</p>
+          <p><span class="tab"></span><strong>Páez, D., Zubieta, E., Mayordomo, S., Jiménez, A. y Ruiz, S. (2004).</strong> Capítulo VI:
+            Identidad. Auto-concepto, auto-estima, auto-eficacia y locus de control. https://
+            www.ehu.eus/documents/1463215/1504276/Capitulo+VI.pdf</p>
+          <p><span class="tab"></span><strong>Ibarra, M., Cortés, D., Flórez, C., & Vargas, E. (2019)</strong>. Embarazo Temprano.
+            Evidencias de la investigación en Colombia. Bogotá: Universidad del Rosar</p>
+          <div style="position: absolute; bottom: 40px; display: grid; font-size: 12px;">
+            <span>Licencia</span>
+            <img src="images/general/by-nc-sa.svg"> 
+            <span>El contendido de esta obra esta bajo una licencia Creative Commons <br>
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">(Atribución-NoComercial-CompartirIgual).</a></span> 
+          </div>
+        </div>
+      </div>
+
+    <!-- [cierra] pages_container -->
+    </div>
+  <!-- [cierra] book_container -->
+  </div>
+
+</body>
+</html>
